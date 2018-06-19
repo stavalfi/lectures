@@ -22,7 +22,6 @@
 
 
 # LateX
-*.pdf
 *.aux
 *.synctex.gz
 

@@ -1,6 +1,6 @@
-This repository is for assembling all the material, practical quizes and the presentations for each of my sessions. 
+This repository contains tutorials written by me about various topics.
 
-Please refer to the links in this page to comment on a specific material or a practical quiz.
+Please refer to the links in this page to comment on a specific tutorial.
 
 #### [Java Streams In Depth](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
 In this tutorial, we will cover the stream library from the basic operations and learn each relevant classes. The tutorial designates to developers with absolutely no experience with streams to more experienced developers who want to clarify their knowledge. Throughout this series, I will introduce new phrases and explain more deeply each Java stream method.

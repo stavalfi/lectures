@@ -21,7 +21,7 @@ In the second and last iteration, `21` and `12` will be sending to our accumulat
 Notes:
 
 1. The accumulator operation does not mutate any temporary result or any element in the collection. It creates new temporary result in each iteration.
-2. The accumulator operation must be associative; For any two values `x` and `y`, the evaluation of `accumulator.apply(x,y)` equals to `accumulator.apply(y,x)`. Examples for non-associative accumulators: `-`, `%`, `/`.
+2. The accumulator operation must be associative; For any three values `x`, `y` and `z`, the evaluation of `accumulator.apply(accumulator.apply(x,y),z)` equals to `accumulator.apply(x,accumulator.apply(y,z))`. Examples for non-associative accumulators: `%`, `/`: `2/(2/2)` isn't equal to (`2/2)/2`. In parallel execution (which we will examine in depth soon), the reducer operation will take advantage of this rule by expanding it recursively to four values.
 3. The reduce operation can run in parallel, but more information on parallel will come later.
 
 ### Chapter 1: Reduction types
@@ -62,6 +62,18 @@ The following image presents parallel computing of the reduce operation when the
 
 ![](http://i.imgur.com/DkU20og.jpg)
 
+As mentioned earlier, due to the fact that there are more then 3 elements in the collection, the reduce operation take advantage of the associativity because all the following forms of computations are **equal**:
+
+1. `accumulator.apply(accumulator.apply(accumulator.apply(x,y),w),z)`
+2. `accumulator.apply(accumulator.apply(x,y),accumulator.apply(w,z))`
+
+_Note:_ The transformation from the first form to the second is immediate (without any intermediate steps) by the definition of associativity and the fact that `accumulator.apply` is associative. 
+
+As we can see, in the second form, we can calculate `accumulator.apply(x,y)` and `accumulator.apply(w,z)` in parallel and combine the results later using `accumulator.apply`.
+
+Also, As a challenge, I leave to the reader the task to activate the associativity rule on array of `5` elements so the reduce operation will support parallel invocations of `accumulator.apply` as much as possible.
+
+----
 The next overloading of the `reduce` operation in Java also receive an _identity_.
 
 Instead of letting reduce operation determine the first left value to be the initial temporary result, we can declare it, and this value is called the _identity_ value.

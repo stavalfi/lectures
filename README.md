@@ -1,9 +1,8 @@
-This repository contains tutorials written by me about various topics.
+This repository contains tutorials on various topics.
 
-Please refer to the links in this page to comment on a specific tutorial.
 
 #### Java Streams In Depth
-In this tutorial, we will cover the stream library from the basic operations and learn each relevant classes. The tutorial designates to developers with absolutely no experience with streams to more experienced developers who want to clarify their knowledge. Throughout this series, I will introduce new phrases and explain more deeply each Java stream method.
+In this tutorial, we will cover the stream library from the basic operations and learn each relevant classes. The tutorial designates to developers with absolutely no experience with streams to more experienced developers who want to clarify their knowledge. Throughout this series, we will introduce new phrases and explain more deeply each Java stream method.
 
 At the end of the tutorial, the reader will have all the necessary information about how each operation works and how to build a query that uses everything stream can give you.
 

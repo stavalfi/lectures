@@ -1,5 +1,5 @@
 # Java streams - Part 6 - Spliterator
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -7,7 +7,6 @@
 2. [The spliterator interface](chapter-1-the-spliterator-interface)
 3. [Spliterator methods](chapter-2-the-spliterator-methods)
 4. [Spliterator in Java streams](chapter-3-spliterator-in-java-streams)
-6. [Legal](#legal)
 
 ### Introduction
 

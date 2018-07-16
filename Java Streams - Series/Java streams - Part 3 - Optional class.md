@@ -1,12 +1,11 @@
 # Java streams - Part 3 - Optional class
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
 1. [Introduction](#introduction)
 2. [Operations](#chapter-1-operations)
 3. [Conclusion](#conclusion)
-4. [Legal](#legal)
 
 ### Introduction
 

@@ -1,5 +1,5 @@
 # Java streams - Part 4 - Reduction
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -7,7 +7,6 @@
 2. [Reduction types](#chapter-1-reduction-types)
 2. [Java reduction](#chapter-2-java-reduction)
 4. [Conclusion](#conclusion)
-5. [Legal](#legal)
 
 ### Introduction
 

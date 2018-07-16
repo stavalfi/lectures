@@ -1,5 +1,5 @@
 # Java streams - Part 5 - Collectors
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -9,7 +9,6 @@
 4. [Simple toList() collector implementation](#chapter-3-simple-tolist-collector-implementation)
 5. [Collectors in the standard library](#chapter-4-collectors-in-the-standard-library)
 4. [Conclusion](#conclusion)
-5. [Legal](#legal)
 
 ### Introduction
 

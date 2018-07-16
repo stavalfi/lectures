@@ -1112,5 +1112,5 @@ System.out.println(result);
 credit is given to Stav Alfi with appropriate and specific direction to the original content.
 
 Creative Commons License "Streams In Depth" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20in%20depth.md.
+Based on a work at https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series.
 

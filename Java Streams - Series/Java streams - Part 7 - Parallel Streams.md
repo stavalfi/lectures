@@ -1,5 +1,5 @@
 # Java streams - Part 7 - Parallel Streams
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -8,7 +8,6 @@
 3. [Concurrent vs parallel programming](#chapter-2-concurrent-vs-parallel-programming)
 4. [Fork/Join framework introduction](#chapter-3-forkjoin-framework-introduction)
 5. [Conclusion](#conclusion)
-6. [Legal](#legal)
 
 ---
 

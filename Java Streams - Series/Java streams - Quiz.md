@@ -1,4 +1,4 @@
-# Java streams - Additional - Quiz
+# Java streams - Quiz
 #### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
   The Answers are at the end of the quiz.

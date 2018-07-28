@@ -1,4 +1,4 @@
-# Java streams - Additional - Stream class methods 
+# Java streams - Stream class methods 
 #### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 I will refer to `Spliterator` characteristics as flags inside `StreamOpFlag` enum. That is because only the flags defined there are currently used in stream library.

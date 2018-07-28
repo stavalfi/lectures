@@ -1,5 +1,5 @@
 # Java streams - Part 1 - What is a Java stream? 
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -7,7 +7,6 @@
 2. [Basic operations](#chapter-1-basic-operations)
 3. [Operation types](#chapter-2-operation-types)
 4. [Conclusion](#conclusion)
-5. [Legal](#legal)
 
 ### Introduction
 
@@ -281,12 +280,3 @@ In this chapter we learned that every stream consists of:
 3. single terminal operation.
 
 In the next chapter, we will discover `IntStream` and other streams that deal with primitive types.
-
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 1 - What is a Java stream?" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/6c385f8360091cc33b6701bd4ee5c242.

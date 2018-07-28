@@ -4,13 +4,13 @@
 
 ### Series:
 
-1. [What is a stream?](https://gist.github.com/stavalfi/6c385f8360091cc33b6701bd4ee5c242)
-2. [Primitive steams](https://gist.github.com/stavalfi/98c170f8f13c302c76f8bf92cda62557)
-3. [Optional class](https://gist.github.com/stavalfi/0e80e3df73e7c2ab3c3310ddef573bba)
-4. [Reduction](https://gist.github.com/stavalfi/0c63570c2db4a31d2177ba921cdd9e11)
-5. [Collectors](https://gist.github.com/stavalfi/3ba04d7d114132d6f57413052bd8daa2)
-6. [Spliterator](https://gist.github.com/stavalfi/5f357213c3275fe923727a6221eafecd)
-7. [Parallel Streams](https://gist.github.com/stavalfi/4744a928f80ca209ce0ffbfb3e27ed96)
+1. [What is a stream?](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%201%20-%20What%20is%20a%20java%20stream.md)
+2. [Primitive steams](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%202%20-%20Primitive%20steams.md)
+3. [Optional class](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%203%20-%20Optional%20class.md)
+4. [Reduction](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%204%20-%20Reduction.md)
+5. [Collectors](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%205%20-%20Collectors.md)
+6. [Spliterator](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%206%20-%20Spliterator.md)
+7. [Parallel Streams](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%207%20-%20Parallel%20Streams.md)
 
 
 ### Additional
@@ -1112,5 +1112,5 @@ System.out.println(result);
 credit is given to Stav Alfi with appropriate and specific direction to the original content.
 
 Creative Commons License "Streams In Depth" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/003cfe716051029eee983300895eb830.
+Based on a work at https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series.
 

@@ -1,12 +1,11 @@
 # Java streams - Part 3 - Optional class
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
 1. [Introduction](#introduction)
 2. [Operations](#chapter-1-operations)
 3. [Conclusion](#conclusion)
-4. [Legal](#legal)
 
 ### Introduction
 
@@ -119,12 +118,3 @@ We will cover much more powerful terminal operation which returns `Optional<T>` 
 ### Conclusion
 
 The `Optional<T>` type help us to replace the old `if(value==null)` statement by building a pipeline to deal with the absence/presence of a given value. There are more operations we didn't cover. Go to [Optional class methods](#optional-class-methods) chapter to read more about `Optional<T>` operations.
-
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 3 - Optional class" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/0e80e3df73e7c2ab3c3310ddef573bba.

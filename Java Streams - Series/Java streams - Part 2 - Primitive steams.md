@@ -1,11 +1,10 @@
 # Java streams - Part 2 - Primitive streams
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
 1. [Introduction](#introduction)
 2. [Types and examples](#chapter-1-types-and-examples)
-3. [Legal](#legal)
 
 ### Introduction
 
@@ -110,12 +109,3 @@ Arrays.asList(1,2,3).stream()
 // 2
 // 3
 ```
-
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 2 - Primitive streams" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/98c170f8f13c302c76f8bf92cda62557.

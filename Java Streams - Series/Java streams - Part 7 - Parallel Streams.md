@@ -1,5 +1,5 @@
 # Java streams - Part 7 - Parallel Streams
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -8,7 +8,6 @@
 3. [Concurrent vs parallel programming](#chapter-2-concurrent-vs-parallel-programming)
 4. [Fork/Join framework introduction](#chapter-3-forkjoin-framework-introduction)
 5. [Conclusion](#conclusion)
-6. [Legal](#legal)
 
 ---
 
@@ -116,12 +115,3 @@ myThreadPool.submit(()->{
             .forEach(....);
 })
 ```
-
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 7 - Parallel Streams" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/4744a928f80ca209ce0ffbfb3e27ed96.

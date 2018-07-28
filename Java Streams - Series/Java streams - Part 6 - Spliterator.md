@@ -1,5 +1,5 @@
 # Java streams - Part 6 - Spliterator
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -7,7 +7,6 @@
 2. [The spliterator interface](chapter-1-the-spliterator-interface)
 3. [Spliterator methods](chapter-2-the-spliterator-methods)
 4. [Spliterator in Java streams](chapter-3-spliterator-in-java-streams)
-6. [Legal](#legal)
 
 ### Introduction
 
@@ -164,11 +163,3 @@ Arrays.asList(1,2,3,4,5,6) // ORDERED SIZED SUBSIZED
         .sorted() // ORDERED DISTINCT SORTED 
         .forEach(System.out::println); // no change -> ORDERED DISTINCT SORTED 
 ```
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 6 - Spliterator" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/5f357213c3275fe923727a6221eafecd.

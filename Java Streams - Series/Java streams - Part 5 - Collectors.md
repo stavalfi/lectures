@@ -1,5 +1,5 @@
 # Java streams - Part 5 - Collectors
-#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://gist.github.com/stavalfi/969539b245fd71f18ecd14f48eed2a5d)
+#### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures) | [Java streams tutorial series](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 
 ### Topics
 
@@ -9,7 +9,6 @@
 4. [Simple toList() collector implementation](#chapter-3-simple-tolist-collector-implementation)
 5. [Collectors in the standard library](#chapter-4-collectors-in-the-standard-library)
 4. [Conclusion](#conclusion)
-5. [Legal](#legal)
 
 ### Introduction
 
@@ -239,12 +238,3 @@ Map<Integer,Map<Boolean,List<Integer>>> result= Arrays
 ### Conclusion
 
 You will notice that there is a `reducing` collector. This operation can have `identity` value, `accumulator` and a `combiner` (Same as `Stream.reduce`). Why Java 8 created 2 reducers who operate the same? The answer is to let us use reduction inside _multi-level_ collectors. For example, we can use `reducing` collector inside a `groupingBy` collector. The research about _multi-level_ collectors is left to the reader.
-
----
-
-### Legal
-
-© Stav Alfi, 2018. Unauthorized use or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Stav Alfi with appropriate and specific direction to the original content.
-
-Creative Commons License "Java streams - Part 5 - Collectors" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)
-Based on a work at https://gist.github.com/stavalfi/3ba04d7d114132d6f57413052bd8daa2.

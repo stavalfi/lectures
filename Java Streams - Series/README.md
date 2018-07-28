@@ -16,12 +16,12 @@
 ### Additional
 
 1. [Introduction](#introduction)
-2. [Quiz](#quiz)
+2. [Quiz](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Quiz.md)
 3. [Complete terms table](#complete-terms-table)
 4. [Spliterator characteristics table](#spliterator-characteristics-table)
 5. [Collections characteristics table](#collections-characteristics-table)
 6. [Stream methods characteristics table](#stream-methods-characteristics-table)
-7. [Stream class methods](#stream-class-methods)
+7. [Stream class methods](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Stream%20class%20methods.md)
 8. [Collectors class methods](#collectors-class-methods)
 9. [Spliterator interface methods](#spliterator-interface-methods)
 10. [Optional class methods](#optional-class-methods)

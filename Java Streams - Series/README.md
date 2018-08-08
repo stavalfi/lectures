@@ -1,4 +1,4 @@
-# Java streams in depth
+# Java Streams In Depth
 
 #### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures)
 

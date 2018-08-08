@@ -2,7 +2,7 @@
 
 #### [Stav Alfi](https://github.com/stavalfi) | [Lectures](https://github.com/stavalfi/lectures)
 
-### Series:
+### Chapters:
 
 1. [What is a stream?](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%201%20-%20What%20is%20a%20java%20stream.md)
 2. [Primitive steams](https://github.com/stavalfi/lectures/blob/master/Java%20Streams%20-%20Series/Java%20streams%20-%20Part%202%20-%20Primitive%20steams.md)

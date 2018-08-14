@@ -1,7 +1,7 @@
 # Introduction to Git by Stav Alfi
 
 <img src="http://pvsousalima.github.io/grupython_apresentacao/images/Git-Icon-Black.png" width="70" height="70">
-
+   
 ### Topics
 
 1. [Introduction](#introduction)

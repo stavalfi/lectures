@@ -66,9 +66,14 @@ Also, a full understanding of lambda expressions is a must.
 
 ###### Aditional definitions
 
-> **Definition 1.** ___side-effect___  is a concept where a function mutates varaibles which are not defined in the function scope.
+> **Definition 1.** A function or expression is said to have a ___side effect___ if it modifies some state outside its scope or has an observable interaction with its calling functions or the outside world besides returning a value.
 
-> **Definition 2.** A ___pure function___ is a function's return value that is **only** dependent on the input parameters. Also, Evaluating the result does not mutate the current state of the app or causing any **side-effects**.
+An essential concept in _functional programming_ is also _pure functions_.
+
+> **Definition 2.** A function may be considered a ___pure function___ if both of the following statements about the function hold:
+> 1. The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change while a program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.
+> 
+>2. Evaluation of the result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices.
 
 > **Definition 3.** ___Lambda Expression___ equals to object of a local class implements an  existing _Functional Interface_. The lambda is the implementation of the single instance method in that interface. _Lambda Expression_  is a function with zero or more parameters and a body that will be (or not) executed at a later stage. We have access to its _free variables_ inside the body.
 

@@ -84,8 +84,6 @@ The thread pool assigns tasks to threads which are not busy at the moment. After
 
 The _common thread pool_ contains `N` threads. `N` is equal to the number of cores the computer has `- 1`.  The `-1` is for letting the `main` thread to also run without getting into a fight for execution time.
 
-You can force the stream library to use different thread-pool by invoking the stream inside a task that will run in different thread-pool as we will see soon.
-
 In this chapter, we won't examine each class and method this library proved but only the relevant for our need. I recommend any reader to examine for himself the parts that are not covered here after reading this tutorial.
 
 The following `Executors` functions let us create new, different thread pools:
@@ -97,21 +95,3 @@ The following `Executors` functions let us create new, different thread pools:
 | `public static ExecutorService newFixedThreadPool(int nThreads)`  |
 | :---------------------------------------------------------------- |
 | Create and return a new thread pool containing `nThreads` threads such that each of them takes tasks from __one__ stuck. If any thread is terminated, a new thread will be created. |
-
-```java
-// example:
-
-ExecutorService myThreadPool =
-             Executors.newFixedThreadPool(10);
-             
-myThreadPool.submit(()->{
-    // if this stream will run in parallel,
-    // it will use myThreadPool threads
-    // instead the common thread-pool threads.
-    Stream.of(1,2,3,4,5)
-            .parallel()
-            .peek((Integer x) -> doSomethingeHeavy(x))
-            ....
-            .forEach(....);
-})
-```

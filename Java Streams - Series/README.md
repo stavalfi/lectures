@@ -68,8 +68,6 @@ Also, a full understanding of lambda expressions is a must.
 
 > **Definition 1.** A function or expression is said to have a ___side effect___ if it modifies some state outside its scope or has an observable interaction with its calling functions or the outside world besides returning a value.
 
-An essential concept in _functional programming_ is also _pure functions_.
-
 > **Definition 2.** A function may be considered a ___pure function___ if both of the following statements about the function hold:
 > 1. The function always evaluates the same result value given the same argument value(s). The function result value cannot depend on any hidden information or state that may change while a program execution proceeds or between different executions of the program, nor can it depend on any external input from I/O devices.
 > 

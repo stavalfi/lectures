@@ -77,7 +77,7 @@ A branch stored in a file under the `.git\ref` folder. There are 2 types of bran
 When You create a new repository, you will be assigned the `master` as the main branch.
 You can create multiple branches that will point to any commit you choose by running `git checkout -b <name of the new branch - A> <existing commit SHA-1 - B>`. To change the branch that `HEAD` is pointing to, run `git checkout <existing branch name - A>`.
 
-                       branch master
+                     branch master
                    /
     A1 <--A2 <--A3 <--A4 
                         \
@@ -101,7 +101,7 @@ Now changing `HEAD` to point to the master branch and commit again, the testing 
     A1 <--A2 <--A3 <--A4 <--A5 
                               \
                                branch testing
-Now we have a nonlinear history. In other words, there is more than one commit that points to commit `f30ab`.
+Now we have a nonlinear history. In other words, there is more than one commit that points to commit `A3`.
 
 After we tested some code in the testing branch, we want to update our master branch with our changes (In case the master branch is the deployment branch, and the testing branch is the development branch).
 
@@ -114,7 +114,7 @@ After we tested some code in the testing branch, we want to update our master br
 You created a branch for development and finished with some features. Currently, you are in the _master_ branch, and you want to update the _master_ branch with the commits: _A2, A3, A4_. By running `git merge development`, you are creating a new commit in the master branch _A13_ that contain the __changes that the _master_ branch doesn't have and the _development_ branch have__.
 
     A1--A2--A3--A4 (branch development)
-     \          \
+     \            \
       A11--A12-----A13 (branch master)
 
 Notice that the _master_ branch is now looking at commit _A13_ and commit _A13_ is pointing to both _A4_ and _A12_. That's a particular case in git where a commit is pointing to more than one commit.
@@ -122,6 +122,7 @@ Notice that the _master_ branch is now looking at commit _A13_ and commit _A13_ 
 The problem with merges that they make a _non-linear history_.
 
 > **Definition 1.6** _**Non-linear history**_ is a history that contains a commit that points to more than one commit. It makes the history log difficult to look at and manage it. Try to avoid it as much as you can.
+
 > **Definition 1.7** _**merge commit**_ is a commit created by a merge and usually points to multiple commits.
 > 
 __Conflicts__

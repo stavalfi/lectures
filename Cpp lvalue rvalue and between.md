@@ -19,7 +19,7 @@ This tutorial attempts to clarify the common mistakes about the multiple invalid
 
 ### Object definitions
 
-I will start by introducing the common, valid and different definitions for the term `obejct`. 
+I will start by introducing the common, valid and different definitions for the term `object`. 
 Throughout this tutorial, I will implicitly use the first definition.
 
 > **Definition 1.1.** An ___object in c programing language___  is an area in the memory which contain an address we can reach which _may_ contain data.
@@ -385,7 +385,7 @@ Same as for operator move.
     
 ### Legal
 
-© Stav Alfi, 2017. Unauthorized use and/or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear
+Â© Stav Alfi, 2017. Unauthorized use and/or duplication of this material without express and written permission from the owner is strictly prohibited. Excerpts and links may be used, provided that full and clear
 credit is given to Stav Alfi with appropriate and specific direction to the original content.
 
 Creative Commons License "C++ lvalue, rvalue and between By Stav Alfi" by Stav Alfi is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License.](http://creativecommons.org/licenses/by-nc/4.0/)

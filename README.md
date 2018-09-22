@@ -1,6 +1,9 @@
 This repository contains tutorials on various topics.
 
 
+#### [Functional Programming In JS - Compositions And Transducers](https://github.com/stavalfi/lectures/blob/master/Functional%20Programming%20In%20JS%20-%20Compositions%20And%20Transducers.md)
+Throughout this tutorial, we will cover a series of basic technics for manipulating a collection of functions. We will build a utility that processes a single element using composition of functions. Then we will process a collection using multiple implementations such that each of them can do more than the last.
+
 #### [Java Streams In Depth](https://github.com/stavalfi/lectures/tree/master/Java%20Streams%20-%20Series)
 In this tutorial, we will cover the stream library from the basic operations and learn each relevant classes. The tutorial designates to developers with absolutely no experience with streams to more experienced developers who want to clarify their knowledge. Throughout this series, we will introduce new phrases and explain more deeply each Java stream method.
 

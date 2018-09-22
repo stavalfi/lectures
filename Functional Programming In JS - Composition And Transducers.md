@@ -1,4 +1,4 @@
-# Functional Programming In JS - Composition And Transducers By Stav Alfi
+# Functional Programming In JS - Compositions And Transducers By Stav Alfi
 
 ### Topics
 

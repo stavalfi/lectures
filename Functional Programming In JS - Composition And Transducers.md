@@ -33,7 +33,9 @@ __Prerequirements__
 
 ----
 
-Throughout this tutorial we will cover a series of basic teqenics for manipulating collection of functions. 
+Throughout this tutorial we will cover a series of basic teqenics for manipulating collection of functions. We will build a utility that process a single element using composition of functions, then we will process a collection using multiple implementations such that each of them can do more then the last.
+
+![](https://i.imgur.com/xBVMq9d.png)
 
 Functional programming is all about functions; the logic. Using special teqenics, we will remove most of the unnessesery informaition from the implementation to empesize our actual logic. The basic fundamentals of programming is deviding our logic to multiple procedures such that each area will do something different. More procedures, the easier for us to test and understand the overall picture. Functional programming is written using declerative code so the implementation details, which are harder to understand, will be less visible. 
 
@@ -83,7 +85,7 @@ This tequenic is called curring.
 
 > **Definition 1.4.** In mathematics and computer science, ___currying___ is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
 
-Thanks to `ES6` spread operator syntax, we can cheat a little bit by accepting multiple functions as a single array.
+Thanks to `ES6` spread syntax, we can cheat a little bit by accepting multiple functions as a single array.
 
 Let's implement compose function:
 
@@ -98,7 +100,11 @@ As implicitly specifing it before, there is a repeated pattern here; we use func
 Usage examples:
 
 ```javascript
-const composition = compose(number => number + "!", number => number * 10);
+const multiply = number => number * 10;
+const toString = number => number + "!";
+
+const composition = compose(toString,multiply);
+
 composition(1); // 1 -> 10 -> 10!
 composition(10); // 10 -> 100 -> 100!
 ```
@@ -106,7 +112,70 @@ composition(10); // 10 -> 100 -> 100!
 
 ### Processing a collection
 
+###### V1
 
+`compose` return a unary function which accept a paramter and transform it. Why not using it inside `map` which accept a function with the same signature!
+
+```javascript
+[1,2,3].map(compose(toString,multiply));
+
+// output:
+// ["10!", "20!", "30!", "40!"]
+```
+
+That's nice but we want to use other operators except `map`.
+
+###### V2
+
+Our next generation of composition will accept functions such that each of them will process a collection instead of a single element. We will create something simiral to:
+
+```javascript
+const add = (number1, number2) => number1 + number2;
+const multiply = number => number * 10;
+
+compose(
+    operator(Array.prototype.reduce, add),
+    operator(Array.prototype.map, multiply)
+)([1, 2, 3]);
+
+// output: 
+// [1,2,3] -> [10,20,30] -> 60
+```
+
+The following implementation will give us the advantage that we can use more operators except what `Array.prototype` provide us but with one condition: Every operator we choose to use must use `this` to access the actual array.
+
+As I just mentions, to implement this version, we need to manually bind `this`:
+
+```javascript
+1. this of Array.prototype.map === [1,2,3]
+2. this of Array.prototype.reduce === [10,20,30]
+```
+
+First let's implement `opertor` function:
+
+```javascript
+const operator = (func, ...params) =>
+            function () {
+                return func.apply(this, params);
+            };
+```
+
+We can't use arrow function inside the return of the `operator` function because we need to change `this` at the function call site while the arrow function will make it's `this` to be the `this` of the `operator` function which is the global `this` and not the actual array we will pass later as a parameter.
+
+Now we need to inplement `compose`. It will be almost identical to it's last version because, again, compose accept unary functions. The only difference is that now those unary functions's `this` must be the collection they process:
+
+```javascript
+const compose = (...operators) =>
+            initialThis =>
+                operators.reduceRight(
+                    (currentThis, operator) => operator.apply(currentThis),
+                    initialThis
+                );
+```
+
+If you look closly at the `operator` implementation, you will see that we sent to `compose` a closure and not an actual `operator` function. The closure already know what to do thanks to the parameters we sent to the `operator` function. The only thing the closure need is someone who will change it's `this` - the `compose` function.
+
+The `compose` function will send the result of the first closure to the second closure (of the second operator) as it's `this` and so on...
 
 ----
 ### Transducers
@@ -129,6 +198,25 @@ const compose = (...funcs) =>
 Rewrite compose such that it will accept multiple functions and multiple values such that all those values will be sent to the last function provided by the user. The rest of the functions accept a single argument. 
 
 Also, you may not receive functions so your implementation must support this behavior too (by doing nothing and returning `undefined`). 
+
+###### Question 2
+
+The second version of `compose` accept operators which accept methods from `Array.prototype`. Use the `operator` function to implement the actual operators: `reduce` and `map`. Let the user use them like this:
+
+```javascript
+const add = (number1, number2) => number1 + number2;
+const multiply = number => number * 10;
+
+compose(
+    reduce(add),
+    map(multiply)
+)([1, 2, 3]);
+
+// output: 
+// [1,2,3] -> [10,20,30] -> 60
+```
+
+The `Array.prototype` methods were implementation details. Now we completely removed any link to them because the user may choose to use other operators which are not implemented by `Array.prototype`.
 
 ----
 ### Conclusion

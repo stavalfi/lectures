@@ -17,8 +17,6 @@
 ---
 _General note:_ This tutorial is heavily influenced by the book [Functional-Light JavaScript](https://github.com/getify/Functional-Light-JS) by [Kyle Simpson](https://github.com/getify). I _highly_ recommend you to read his excellent book.
 
-_Java note:_ Due to the absence of composition syntax support, there is no way to implement the code without reflections and wildcards.
-
 ------
 
 ### Introduction

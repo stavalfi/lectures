@@ -79,7 +79,7 @@ const result1 = composition(element1);
 const result2 = composition(element2);
 ```
 
-This sequence is called curring.
+This splitting technique is called curring.
 
 > **Definition 2.1.** In mathematics and computer science, ___currying___ is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
 

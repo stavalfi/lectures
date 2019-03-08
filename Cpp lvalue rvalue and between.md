@@ -30,7 +30,7 @@ For example, function or an instance of a struct.
 
 Also I will define one more common term, I will use alot:
 
-> **Definition 1.3.** An ___temporary object___ is an object of class type. it does not have a _name_ (we can't reach this object after it's evaluation). It has an address on the stack and it will be destoryed __after__ evaluating the full expression which which has a "some link" to the expression who created that temporary object, unless we _named_ that temporary object. By naming I mean, creating a "way" to reach that temporary object which the compiler approve (This tutorial will teach you how to do it).
+> **Definition 1.3.** A ___temporary object___ is an object of class type. it does not have a _name_ (we can't reach this object after it's evaluation). It has an address on the stack and it will be destoryed __after__ evaluating the full expression which which has a "some link" to the expression who created that temporary object, unless we _named_ that temporary object. By naming I mean, creating a "way" to reach that temporary object which the compiler approve (This tutorial will teach you how to do it).
 
 ###### Examples:
 From definition 1.3: "it will be destoryed after evaluating the expression which created him...":

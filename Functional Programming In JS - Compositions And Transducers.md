@@ -12,7 +12,7 @@
 
 1. [Sources](#sources)
 2. [Quiz](#quiz)
-3. [Complete terms table](#complete-terms-table) (Wikipedia)
+3. [Complete terms table](#complete-terms-table)
 
 ---
 _General note:_ This tutorial is heavily influenced by the book [Functional-Light JavaScript](https://github.com/getify/Functional-Light-JS) by [Kyle Simpson](https://github.com/getify). I _highly_ recommend you to read his excellent book.

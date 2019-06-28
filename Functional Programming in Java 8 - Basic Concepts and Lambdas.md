@@ -78,7 +78,7 @@ The most common _functional interfaces_ defined in `java.util.function` package.
 |`DoubleConsumer::accept`                      |    `double`         | `void`       | Expected to operate via side-effects |
 |`ObjIntConsumer<T>::apply`                   |    `Object`,`int`          | `void`          | Expected to operate via side-effects |
 
-Note: Do not create your open _functional interfaces_., instead use what Java provides in `java.util.function` package or any other packages. You should also read and memorize the use case of each _functional interface_.  For example, by using `Predicate` interface, you should only check if an input parameter is fulfilled in some conditions. You should not do any side effects in the process because the caller will assume you are using this interface as java recommended you to use it. 
+Note: Do not create your own _functional interfaces_., instead use what Java provides in `java.util.function` package or any other packages. You should also read and memorize the use case of each _functional interface_.  For example, by using `Predicate` interface, you should only check if an input parameter is fulfilled in some conditions. You should not do any side effects in the process because the caller will assume you are using this interface as java recommended you to use it. 
 
 Understanding `side-effects` is not mandatory to get the idea and use lambdas.
 
@@ -97,7 +97,7 @@ Java 8 introduced a new feature which takes us one step toward functional progra
 
 > **Definition 2.1.** A variable which wasn't defined as final, but never changed is also   ___effectively final___.
 
-> **Definition 2.2.** By referring  ___free variables___ of a function is all the variables didn't define inside the function nor parameters of that function.
+> **Definition 2.2.** By referring  ___free variables___ of a function, we refer to all the variables that weren't define inside the function nor parameters of that function.
 
 > **Definition 2.3.** ___Lambda Expression___  is the method implementation  of a  _functional interface_. It has zero or more parameters and a body that will (or not) execute at a later stage. Inside the body, we have access to its _free variables_.
 
